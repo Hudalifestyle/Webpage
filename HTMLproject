@@ -1,1 +1,111 @@
-this is page about anime
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinalProject</title>
+<body>
+<style>
+
+
+  h1{
+      text-align: center;
+    }
+        
+    
+    p {
+        display: block;
+        text-align:center;
+        font-size: 14px;
+       font-weight: 100;
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+   img{
+     width: 500px;
+     max-width: 100%;
+    display: block;
+    margin:0 auto;
+    padding: 20px;
+    border: 10px saddlebrown;
+    border-radius: 4px;
+   }
+   button {
+    display: block;
+        font-size: 18px;
+        margin: 40px auto 40px auto;
+        background:transparent;
+        color:white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 40px;
+       border-radius: 40px;
+       margin: 30px auto;
+       border: 1px solid #7c52ef;
+       box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+       text-align:center;
+       background: blueviolet;
+      transition: 0.3s;
+
+   }
+
+    button:hover{
+            background-color:white;
+            color: black;
+        }
+        body{
+        background: radial-gradient(circle at 10% 20%, rgb(45, 92, 112) 0%, rgb(116, 120, 200) 90%);
+        }
+        
+          h2{
+            font-weight: lighter;
+            text-align: center;
+            color:rgba(12, 1, 11, 0.989);
+          }
+</style>
+</head>
+<body>
+  <h1> I love anime </h1>
+  <h2> My favorite genra is Isekai</h2>
+
+   
+<p>
+  <img
+   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/370/original/74524233_465096467471303_1914531691381129216_o.jpg?1660274691" alt="Isekai Anime"
+          width="3000"/>
+</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Isekai"target="_blank" class="learn-more" alt="wikipedia"> Learn more on wikipedia</a>
+
+  <!-- javeScript part -->
+</a>
+</p>
+</div>
+   <button class="watch-me">
+     👉🏼 Go Watch Anime
+</button>
+
+<script>
+function watch() {
+   let name = prompt("What is your name?");
+   let email = prompt("What is your email?");
+   let genre = prompt("What is your favorite genre?");
+   if (genre === "Isekai") {
+      alert("Hello, " + name + "! We are Isekai buddies!");
+   } else {
+      alert("Your favorite genre is " + genre);
+   }
+   alert("Thank you, " + name + ", for joining us");
+}
+
+let watchButton = document.querySelector(".watch-me");
+watchButton.addEventListener("click", watch);
+</script>
+   
+   
+    <p class="footer"> This page was built by <a href=""> Huda Gama</a> </p>
+
+    <!-- javeScript part -->
+</body>
+</html>
